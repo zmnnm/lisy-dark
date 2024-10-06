@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lisy Dark Mode
 // @namespace    http://zemann.hu/
-// @version      1.0
+// @version      1.1
 // @description  Auto refresh and scroll for digicorp results page
 // @author       ZMNN
 // @match        https://lisy.ahrt.hu/*
@@ -28,17 +28,13 @@ function addGlobalStyle(css) {
 }
 
 addGlobalStyle('body {background-color: black;}')
-addGlobalStyle('.FALIBELSO {background-color: grey;}')
-addGlobalStyle('.FALINORMAL {background-color: grey !important;}')
-addGlobalStyle('.FALIFEJ {background-color: grey !important;}')
-addGlobalStyle('.DOBOZ {background-color: grey !important;}')
-addGlobalStyle('.FELSOMENUDOBOZ {background-color: #383838 !important;}')
-addGlobalStyle('.BALMENU {background-color: #383838 !important;}')
+addGlobalStyle('.BASICWINDOW, .BASICWINDOWBIG  {background-color: grey;}')
+addGlobalStyle('.FALINORMAL, .FALIBELSO, .FALIFEJ, .DOBOZ, article {background-color: grey !important;}')
+addGlobalStyle('.FELSOMENUDOBOZ, .BALMENU, .FEJLEC {background-color: #383838 !important;}')
 addGlobalStyle('.BALMENU {background: #383838 !important;}')
-addGlobalStyle('.BALMENUBUTTON {background: #404040 !important;}')
 addGlobalStyle('.FELSOMENUBUTTON {background-color: #404040 !important;}')
-addGlobalStyle('.FEJLEC {background-color: #383838 !important;}')
-addGlobalStyle('article {background-color: grey !important;}')
+addGlobalStyle('.BALMENUBUTTON {background: #404040 !important;}')
+addGlobalStyle('.prodjelentframe {background-color: grey;dropshadow: 3px 3px grey !important;color: white;}')
 //document.getElementsByClassName('FELSOMENUDOBOZ')[1].style=document.getElementsByClassName('FELSOMENUDOBOZ')[1].style+'background-color: #383838 !important;'
 })();
 
