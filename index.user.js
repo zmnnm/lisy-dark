@@ -2,6 +2,7 @@
 // @name         Lisy Dark Mode
 // @namespace    http://zemann.hu/
 // @version      1.1
+// @downloadURL  https://github.com/zmnnm/lisy-dark/blob/main/index.user.js
 // @description  Auto refresh and scroll for digicorp results page
 // @author       ZMNN
 // @match        https://lisy.ahrt.hu/*
