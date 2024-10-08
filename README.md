@@ -1,4 +1,5 @@
 WIP!
 
-Adds dark elements to lisy.
-Tampermonkey is nessesary!
+Adds a dark theme to Lisy. Make shure to use a latest version. Tampermonkey is nessesary!
+
+Huge shout out to Bálint on this project!
