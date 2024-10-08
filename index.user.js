@@ -41,7 +41,7 @@
     document.getElementById('serverinfo').style.setProperty("background-image", "linear-gradient(#383838, #000000)");
     document.getElementsByTagName('article')[0].style.setProperty("background-color", "black", "important");
     document.getElementsByTagName('article')[0].style.setProperty("color", "white");
-    document.getElementsByTagName('article')[0].childNodes[0].innerText += "\nDarkmode by ZMNN"
+    document.getElementsByTagName('article')[0].childNodes[0].innerText += "\nDarkmode by ZMNN v1.6.2"
     document.getElementsByTagName('iframe')[0].style.setProperty("box-shadow", "1px 3px grey");
     addGlobalStyle('.main {background-color: grey !important;};');
 
