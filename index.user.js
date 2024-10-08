@@ -35,7 +35,7 @@ addGlobalStyle('.FALINORMAL, .FALIBELSO, .FALIFEJ, .DOBOZ, article {background-c
 addGlobalStyle('.FELSOMENUDOBOZ, .BALMENU, .FEJLEC {background-color: #383838 !important;}')
 addGlobalStyle('.BALMENU {background: #383838 !important;}')
 addGlobalStyle('.FELSOMENUBUTTON {background-color: #404040 !important;}')
-addGlobalStyle('.BALMENUBUTTON {background: #404040 !important;}')
+addGlobalStyle('.BALMENUBUTTON, .ALMENUBUTTON, .ALMENUBUTTON2, .ALMENUBUTTON3, .ALMENUBUTTON4, .ALMENUBUTTON5, .ALMENUBUTTON6, .ALMENUBUTTON7, .ALMENUBUTTON8, .ALMENUBUTTON9, .ALMENUBUTTON10, .ALMENUBUTTON11 {background: #404040 !important;}')
 addGlobalStyle('.prodjelentframe {background-color: grey;dropshadow: 3px 3px grey !important;color: white;}')
 //document.getElementsByClassName('FELSOMENUDOBOZ')[1].style=document.getElementsByClassName('FELSOMENUDOBOZ')[1].style+'background-color: #383838 !important;'
 })();
