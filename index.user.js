@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lisy Dark Mode
 // @namespace    http://zemann.hu/
-// @version      1.1
+// @version      1.2
 // @downloadURL  https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @updateURL    https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @description  Auto refresh and scroll for digicorp results page
