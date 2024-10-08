@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lisy Dark Mode
 // @namespace    http://zemann.hu/
-// @version      1.5.1
+// @version      1.5.2
 // @downloadURL  https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @updateURL    https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @description  Auto refresh and scroll for digicorp results page
@@ -34,7 +34,7 @@ addGlobalStyle('.BASICWINDOW, .BASICWINDOWBIG  {background-color: grey;}')
 addGlobalStyle('.FALINORMAL, .FALIBELSO, .FALIFEJ, .DOBOZ, article, table {background-color: grey !important;}')
 addGlobalStyle('.FELSOMENUDOBOZ, .BALMENU, .FEJLEC {background-color: #383838 !important;}')
 addGlobalStyle('.BALMENU {background: #383838 !important;}')
-addGlobalStyle('.BUTTON {color: white !important;}')
+addGlobalStyle('.BUTTON, article {color: white !important;}')
 addGlobalStyle('.FELSOMENUBUTTON {background-color: #404040 !important;}')
 addGlobalStyle('.BUTTON, .FELSOALMENUBUTTON, .FELSOALMENUBUTTON2, .FELSOALMENUBUTTON3, .ALMENUBUTTONALKKVIEW, .ALMENUBUTTONAL2, .ALMENUBUTTONAL3, .ALMENUBUTTONAL11, .ALMENUBUTTONAL12,  .ALMENUBUTTONAL19, .ALMENUBUTTONAL52, .ALMENUBUTTONAL62, .ALMENUBUTTONAL2, .BALMENUBUTTON, .ALMENUBUTTON, .ALMENUBUTTON2, .ALMENUBUTTON3, .ALMENUBUTTON4, .ALMENUBUTTON5, .ALMENUBUTTON6, .ALMENUBUTTON7, .ALMENUBUTTON8, .ALMENUBUTTON9, .ALMENUBUTTON10, .ALMENUBUTTON11 {background: #404040 !important;}')
 addGlobalStyle('.prodjelentframe {background-color: grey;dropshadow: 3px 3px grey !important;color: white;}')
