@@ -23,6 +23,9 @@
         style.innerHTML = css;
         head.appendChild(style);
     }
+
+    //Desktop
+
     if (window.location.href == 'https://lisy.ahrt.hu/index.html') {
         addGlobalStyle("body {background-image: none !important; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(pictures/Alap_hatter.jpg) !important;}}");
     }
@@ -45,6 +48,9 @@
     document.getElementsByTagName('iframe')[0].style.setProperty("box-shadow", "1px 3px grey");
     addGlobalStyle('.main {background-color: grey !important;};');
 
+    //Mobile
+
+    addGlobalStyle('.BASICWINDOWmobil, {background-color: none; background-image: none; background: radial-gradient(circle, rgba(52,52,52,1) 50%, rgba(0,0,0,1) 100%);}')
 
 
 
