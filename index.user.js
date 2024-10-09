@@ -50,7 +50,7 @@
 
     //Mobile
 
-    addGlobalStyle('.BASICWINDOWmobil, {background-color: black; background-image: radial-gradient(circle, rgba(52,52,52,1) 50%, rgba(0,0,0,1) 100%);}')
+    addGlobalStyle('.BASICWINDOWmobil {color: white !important; background-color: black !important; background-image: radial-gradient(circle, rgba(52,52,52,1) 50%, rgba(0,0,0,1) 100%) !important; box-shadow: none !important;}')
 
 
 
