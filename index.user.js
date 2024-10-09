@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lisy Dark Mode
 // @namespace    http://zemann.hu/
-// @version      1.6.2
+// @version      1.7.1
 // @downloadURL  https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @updateURL    https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @description  Lisy Dark mode
@@ -23,10 +23,14 @@
         style.innerHTML = css;
         head.appendChild(style);
     }
+
+    //Desktop
+
     if (window.location.href == 'https://lisy.ahrt.hu/index.html') {
         addGlobalStyle("body {background-image: none !important; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(pictures/Alap_hatter.jpg) !important;}}");
     }
-    addGlobalStyle('body {background: linear-gradient(0deg, rgba(52,52,52,1) 10%, rgba(0,0,0,1) 100%);}')
+    addGlobalStyle('body {background-color: black;}')
+    addGlobalStyle('.prod1 {background-color: darkgrey;}')
     addGlobalStyle('.BASICWINDOW, .BASICWINDOWBIG  {background-color: grey;}')
     addGlobalStyle('.FALINORMAL, .FALIBELSO, .FALIFEJ, .DOBOZ, article, table {background-color: grey !important;}')
     addGlobalStyle('.FELSOMENUDOBOZ, .BALMENU, .FEJLEC {background-color: #383838 !important;}')
@@ -41,10 +45,13 @@
     document.getElementById('serverinfo').style.setProperty("background-image", "linear-gradient(#383838, #000000)");
     document.getElementsByTagName('article')[0].style.setProperty("background-color", "black", "important");
     document.getElementsByTagName('article')[0].style.setProperty("color", "white");
-    document.getElementsByTagName('article')[0].childNodes[0].innerText += "\nDarkmode by ZMNN v1.6.2"
+    document.getElementsByTagName('article')[0].childNodes[0].innerText += "\nDarkmode by ZMNN v1.7.1"
     document.getElementsByTagName('iframe')[0].style.setProperty("box-shadow", "1px 3px grey");
     addGlobalStyle('.main {background-color: grey !important;};');
 
+    //Mobile
+
+    addGlobalStyle('.BASICWINDOWmobil {color: white !important; background-color: black !important; background-image: radial-gradient(circle, rgba(52,52,52,1) 50%, rgba(0,0,0,1) 100%) !important; box-shadow: none !important;}')
 
 
 
