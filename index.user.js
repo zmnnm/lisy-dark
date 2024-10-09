@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lisy Dark Mode
 // @namespace    http://zemann.hu/
-// @version      1.6.2
+// @version      1.7
 // @downloadURL  https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @updateURL    https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @description  Lisy Dark mode
@@ -44,7 +44,7 @@
     document.getElementById('serverinfo').style.setProperty("background-image", "linear-gradient(#383838, #000000)");
     document.getElementsByTagName('article')[0].style.setProperty("background-color", "black", "important");
     document.getElementsByTagName('article')[0].style.setProperty("color", "white");
-    document.getElementsByTagName('article')[0].childNodes[0].innerText += "\nDarkmode by ZMNN v1.6.2"
+    document.getElementsByTagName('article')[0].childNodes[0].innerText += "\nDarkmode by ZMNN v1.7"
     document.getElementsByTagName('iframe')[0].style.setProperty("box-shadow", "1px 3px grey");
     addGlobalStyle('.main {background-color: grey !important;};');
 
