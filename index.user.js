@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lisy Dark Mode
 // @namespace    http://zemann.hu/
-// @version      1.7.3
+// @version      1.7.4
 // @downloadURL  https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @updateURL    https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @description  Lisy Dark mode
@@ -43,12 +43,16 @@
     addGlobalStyle("#BasicWindow {background-color: grey !important;};");
     document.getElementsByClassName('FELSOMENUDOBOZ')[1].style.setProperty("background", "linear-gradient(to right, #383838, #383838 93%, black 100%, black)");
     document.getElementById('serverinfo').style.setProperty("background-image", "linear-gradient(#383838, #000000)");
-    document.getElementById('Layer1').style.setProperty("background-color", "grey", "important");
     document.getElementsByTagName('article')[0].style.setProperty("background-color", "black", "important");
     document.getElementsByTagName('article')[0].style.setProperty("color", "white");
-    document.getElementsByTagName('article')[0].childNodes[0].innerText += "\nDarkmode by ZMNN v1.7.3"
+    document.getElementsByTagName('article')[0].childNodes[0].innerText += "\nDarkmode by ZMNN v1.7.4"
     document.getElementsByTagName('iframe')[0].style.setProperty("box-shadow", "1px 3px grey");
     document.getElementsByName('infoment')[0].childNodes[5].childNodes[1].childNodes[5].style.setProperty("color", "white", "important");
+    const checkbox = document.querySelector('input[type="checkbox"][name="ID17"]');
+    if (!checkbox) return;
+    const targetDiv = checkbox.closest('div');
+    if (!targetDiv) return;
+    targetDiv.style.backgroundColor = 'grey';
     addGlobalStyle('.main {background-color: grey !important;};');
 
     //Mobile
@@ -58,4 +62,5 @@
 
 
 })();
+
 
