@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lisy Dark Mode
 // @namespace    http://zemann.hu/
-// @version      2.6.0
+// @version      2.7.3
 // @downloadURL  https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @updateURL    https://github.com/zmnnm/lisy-dark/raw/refs/heads/main/index.user.js
 // @description  Lisy Dark mode
@@ -69,14 +69,11 @@
 
     .BASICWINDOWmobil {
         color: var(--ls-text) !important;
-        background-color: var(--ls-bg-panel-2) !important;
-        background-image: radial-gradient(circle, #303030 50%, #000 100%) !important;
+        background-color: var(--ls-bg-page) !important;
+        background-image: none !important;
         box-shadow: none !important;
     }
 
-    /* Both the top menu bar AND the top-right user-info box share this
-       class; the latter has an inline light gradient we flatten here
-       instead of patching it via JS. */
     .FELSOMENUDOBOZ {
         background-image: none !important;
         background: var(--ls-bg-chrome) !important;
@@ -150,6 +147,7 @@
     A.tabla2:hover                                  { color: var(--ls-accent-hover) !important; }
     A.mtars:link, A.mtars:visited, A.mtars:active   { color: var(--ls-accent) !important; }
     A.diszpo:link, A.diszpo:visited, A.diszpo:active { color: var(--ls-text) !important; }
+
     .postit2                      { background: var(--ls-bg-panel-2) !important; }
     .postit2 > font                { color: var(--ls-accent-danger) !important; }
     .postit2 font[color='black']   { color: var(--ls-text) !important; }
@@ -188,10 +186,12 @@
         background-color: var(--ls-bg-input) !important;
         color: var(--ls-text) !important;
     }
+
     .tddoboz { background-color: var(--ls-bg-panel-2) !important; }
     #kklist  { background-color: var(--ls-bg-panel-2) !important; }
     .kkviewspan { color: var(--ls-text) !important; border-color: var(--ls-border) !important; }
     A.tabla { border-color: var(--ls-border) !important; }
+
     .tablakiir, .tablakiirright, .tablakiir2, .tablakiirleft { color: var(--ls-text) !important; }
 
     input[type="text"], input[type="date"], input[type="number"],
@@ -223,10 +223,25 @@
     .adminmenusor, .tododiv, .leltartabla, .leltarcsop, .MUSZVEZKKBUTTON,
     .prodjelentbutton, .jellegszoveg, .alvsfo, .kisablakuzenet,
     .prodjelentframe, .projectframe, .MtTable tr, #kiadas tr:nth-child(even),
-    .hibastatusz, .napijelent, .prodtablatr, .css3-tabstrip li > div,
-    .css3-tabstrip input[type="radio"]:checked + label {
+    .hibastatusz, .napijelent, .prodtablatr {
         background-color: var(--ls-bg-panel-2) !important;
         color: var(--ls-text) !important;
+    }
+
+    .css3-tabstrip {
+        background: var(--ls-bg-page) !important;
+        border-radius: 10px !important;
+        padding: 4px !important;
+    }
+    .css3-tabstrip li > div {
+        background: transparent !important;
+        color: var(--ls-text-dim) !important;
+        border-radius: 7px !important;
+    }
+    .css3-tabstrip input[type="radio"]:checked + label {
+        background: var(--ls-accent) !important;
+        color: var(--ls-text-on-accent) !important;
+        border-radius: 7px !important;
     }
 
     .input, .input2, .input3, .input4, .inputszam, .FINAinput,
@@ -240,9 +255,34 @@
     .prod0                  { background: var(--ls-bg-panel-2) !important; color: var(--ls-text) !important; }
     .specprod1, .specprod3 { background-color: var(--ls-bg-panel-2) !important; color: var(--ls-text) !important; }
 
-    .FALIMOBIL, .MOBILKOMMENT, .button2, .MOBILMENU, .MOBILDISZPO,
-    .MOBILSAJAT, .MOBILKIIR, .MOBILPROD, .MOBILSZALLITO1, .MOBILSZALLITO2,
-    .MOBILSZALLITO3, .MOBILSZALLITO4, .MOBILMENETLEVEL, .uzifelado,
+    .MOBILMENU {
+        background-color: var(--ls-bg-panel-3) !important;
+        background-image: none !important;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5) !important;
+        color: var(--ls-text) !important;
+        font-weight: 500 !important;
+        border-radius: 12px !important;
+    }
+    .MOBILMENU:active {
+        background-color: var(--ls-accent) !important;
+        color: var(--ls-text-on-accent) !important;
+    }
+
+    .MOBILDISZPO, .MOBILSAJAT, .MOBILKIIR, .MOBILPROD, .MOBILSZALLITO1,
+    .MOBILSZALLITO2, .MOBILSZALLITO3, .MOBILSZALLITO4, .MOBILMENETLEVEL {
+        background-color: var(--ls-bg-panel-3) !important;
+        color: var(--ls-text) !important;
+        box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.5) !important;
+        border-radius: 12px !important;
+    }
+    .MOBILDISZPO:active, .MOBILSAJAT:active, .MOBILKIIR:active,
+    .MOBILPROD:active, .MOBILSZALLITO1:active, .MOBILSZALLITO2:active,
+    .MOBILSZALLITO3:active, .MOBILSZALLITO4:active, .MOBILMENETLEVEL:active {
+        background-color: var(--ls-accent) !important;
+        color: var(--ls-text-on-accent) !important;
+    }
+
+    .FALIMOBIL, .MOBILKOMMENT, .button2, .uzifelado,
     .uzifejlec, .Buttongray:hover {
         background-color: var(--ls-bg-panel-2) !important;
         color: var(--ls-text) !important;
@@ -261,7 +301,7 @@
     safe(function () {
         var article = document.getElementsByTagName('article')[0];
         if (article && article.childNodes[0]) {
-            article.childNodes[0].innerText += '\nDarkmode by ZMNN v2.6.0';
+            article.childNodes[0].innerText += '\nDarkmode by ZMNN v2.7.3';
         }
     }, 'version signature append');
 
@@ -374,7 +414,6 @@
                     el.style.setProperty('color', '#e8e6e2', 'important');
                 }
             }
-
 
             if (el.style.backgroundImage && el.style.backgroundImage !== 'none') {
                 el.style.setProperty('background-blend-mode', 'multiply', 'important');
